@@ -15,7 +15,7 @@ class ConfigReaderVault:
     def read_config_parameter(key):
         _logger.debug(f"Reading config parameter: {key}")
 
-        key_vault_name = "kv-agnes2-test-westeu-03"
+        key_vault_name = " "
         kv_uri = f"https://{key_vault_name}.vault.azure.net"
         credential = DefaultAzureCredential()
         client = SecretClient(vault_url=kv_uri, credential=credential)
